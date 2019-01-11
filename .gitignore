@@ -1,0 +1,5 @@
+# Modules excluded
+node_modules
+
+#Shots
+errorShots

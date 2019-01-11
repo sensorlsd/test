@@ -1,0 +1,24 @@
+{
+  "name": "wdio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio"
+  },
+  "dependencies": {
+    "assert": "^1.4.1",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "npm": "^6.5.0",
+    "rx-lite-aggregates": "^4.0.8",
+    "selenium-standalone": "^6.15.4",
+    "wdio-mocha-framework": "^0.6.4",
+    "webdriverio": "4.13.2"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wdio/cli": "^5.2.8"
+  }
+}
