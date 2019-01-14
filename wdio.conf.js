@@ -1,4 +1,10 @@
-let BASE_URL = 'http://webdriveruniversity.com';
+let BASE_URL;
+
+if (process.env.SERVER === 'prod') {
+    BASE_URL = 'https://www.google.com';
+} else {
+    BASE_URL = 'http://webdriveruniversity.com';
+}
 
 exports.config = {
     
@@ -82,7 +88,7 @@ exports.config = {
     baseUrl: BASE_URL,
     //
     // Default timeout for all waitFor* commands.
-    waitforTimeout: 10000,
+    waitforTimeout: 20000,
     //
     // Default timeout in milliseconds for request
     // if Selenium Grid doesn't send response
@@ -162,8 +168,10 @@ exports.config = {
      * @param {Array.<Object>} capabilities list of capabilities details
      * @param {Array.<String>} specs List of spec file paths that are to be run
      */
-    // before: function (capabilities, specs) {
-    // },
+    before: function (capabilities, specs) {
+        let expect = require('chai').expect;
+        let should = require('chai').should();
+        },
     /**
      * Runs before a WebdriverIO command gets executed.
      * @param {String} commandName hook command name
