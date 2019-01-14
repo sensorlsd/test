@@ -1,7 +1,7 @@
 describe("Verify WebDriver University link", () => {
    it("Verify correct home page -> CONTACT US", () => {
        browser.setViewportSize({width: 1200, height: 800});
-       browser.url('http://www.webdriveruniversity.com/');
+       browser.url('/');
        let title = browser.getTitle();
        console.log(title);
        browser.click('#contact-us');
@@ -9,7 +9,7 @@ describe("Verify WebDriver University link", () => {
    });
 
    it("check that login button open the login portal page", () => {
-       browser.url('http://www.webdriveruniversity.com/');
+       browser.url('/');
        browser.click('#login-portal');
        browser.pause(1000)
    });
