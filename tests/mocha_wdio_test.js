@@ -8,6 +8,7 @@ describe("Verify WebDriver University link", () => {
        browser.url('/');
        let title = browser.getTitle();
        console.log(title);
+       browser.debug();
        expect(title).to.equal('WebDriverUniversity.com');
        browser.click('#contact-us');
        browser.pause(1000);
@@ -19,12 +20,16 @@ describe("Verify WebDriver University link", () => {
        console.log(title);
        title.should.equal('WebDriverUniversity.com');
        browser.click('#login-portal');
-       browser.pause(1000)
+       browser.pause(1000);
    });
 
     it('should have the right title', (done) => {
-        browser.url('https://webdriver.io');
+        browser.url('/');
         const title = browser.getTitle();
-        console.log(title)
+        console.log(title);
     });
 });
+
+
+
+
