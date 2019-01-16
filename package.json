@@ -16,7 +16,6 @@
     "npm": "^6.5.0",
     "rx-lite-aggregates": "^4.0.8",
     "selenium-standalone": "^6.15.4",
-    "ts-node": "7.0.1",
     "wdio-mocha-framework": "^0.6.4",
     "wdio-selenium-standalone-service": "0.0.12",
     "webdriverio": "4.13.2"
@@ -24,6 +23,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@wdio/cli": "^5.2.8"
+    "@wdio/cli": "^5.2.8",
+    "ts-node": "7.0.1"
   }
 }

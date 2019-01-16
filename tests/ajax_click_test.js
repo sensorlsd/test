@@ -14,5 +14,4 @@ describe("Test that the button is clickable ince the Ajax loader comletes loadin
         browser.click('#button1');
         browser.pause(7000);
     });
-
 });
